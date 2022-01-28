@@ -1,0 +1,177 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.homePage{
+    width: 100%;
+    height: 100%;
+}
+#navbar {
+    width: 100%;
+    position: fixed;
+    height: 10%;
+    background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
+    color: white;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+}
+.container li{
+    display: inline;
+}
+
+.container a{
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+#top {
+    display: flex;
+}
+#primaryOpticalArea{
+    width: 60%;
+    padding: 10% 3% 3% 3%;
+    background-color: black;
+    color: white;
+
+}
+.photo {
+    width: 40%;
+}
+.button {
+    padding-top: 5%;
+    display:flex;
+    justify-content: center;
+}
+.btn {
+    padding: 3%;
+    margin: 8% 8% 0% 8%;
+    border-radius: 10%;
+}
+
+#about {
+    display: flex;
+}
+#terminalArea h2{
+    padding-top: 10%;
+    width: 20%;
+    margin: 0 auto;
+}
+#terminalArea ul{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#terminalArea {
+    width: 60%;
+    background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
+    color: white;
+}
+#terminalArea p{
+    padding: 3%;
+}
+#terminalArea ul{
+    list-style: none;
+}
+#terminalArea li{
+    color: orange;
+}
+.clients h2{
+    width: 20%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    color: white;
+}
+.logo {
+    height: 100%;
+}
+.quote {
+    width: 100%;
+    padding-top: 3%;
+
+    background-image: linear-gradient(to bottom right,black, rgb(90, 89, 88), black);
+    color: white;
+}
+.quote h2{
+    width: 20%;
+    margin: 0 auto;
+
+}
+.quote h4{
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.project {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.radioslider_horizontal {
+    flex-flow: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.radioInput {
+    padding: 15px 0;
+}
+footer {
+    padding: 4% 4% 0% 4%;
+    background: black;
+    color: white;
+}
+.footerUpper {
+    display: flex;
+    justify-content: space-around;
+}
+.footerColoms {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu {
+    list-style: none;
+}
+.manu-1 {
+    padding: 3px 0;;
+}
+.manu-2 {
+    padding: 3px 0;;
+}
+h3 {
+    padding: 5px 0;
+}
+.textWhite {
+    margin: 5px 0;
+
+}
+.contact {
+    padding: 3px 0;
+}
+.social {
+    width: 80%;
+}
+.socialIcons{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+
+}
+.footerLower {
+    padding: 5px;
+}

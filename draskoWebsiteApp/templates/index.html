@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Home page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/index.CSS' %}">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+
+        body {
+            background: yellow;
+            /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+            font-size: 14px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .swiper {
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 100px;
+            background: black;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 120px; 
+            height: 60px;
+            background: #000;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#006);
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        .socialIcon {
+            color: white;
+            transition: color 0.2s;
+        }
+        .socialIcon:hover {
+            color: orange;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="homePage">
+        <nav id="navbar">
+            <h3 id="companyName">Vucen Develoopers inc</h3>
+            <div class="container">
+                <ul>
+                    <li><a href=" ">HOME</a></li>
+                    <li><a href=" ">ABOUT</a></li>
+                    <li><a href=" ">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="top">
+            <div id="primaryOpticalArea">                    
+                <h1>Use a descriptive, Keyphrase focused headline</h1>
+                <h3>Clear, simple description of services, but don't put all of your calls to action at the top. One thing at the time. Visitors don't like clutter.</h3>
+                <div class="button">
+                    <a href="/"><button class="btn" style="border-color:orange; background-color:black; color:orange">Our Services</button></a>
+                    <a href="/"><button class="btn" style="background-color: orange; color: black">Get My FREE Quote</button></a>
+                </div>
+
+            </div>
+            <div class="photo">
+                <img id="blackWhiteClearDesk" style='height: 100%; width: 100%; object-fit: contain' alt="computerDesk" src="{% static 'images/blackWhiteClearDesk.jpg' %}" />
+            </div>
+        </div>
+        <div id="about">
+            <div class="photo">
+                <img id="blackWhiteRightAngle" style='height: 100%; width: 100%; object-fit: contain' alt="largeComputerDesk" src="{% static 'images/blackWhiteRightAngle.jpg' %}" />
+            </div>
+            <div id="terminalArea">
+                <h2>SERVICES</h2>
+                <p>Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
+                <ul>
+                    <li>WEB DESIGN</li>
+                    <li>WEB DEVELOOPMENT</li>
+                    <li>RESPONSIVE DESIGN</li>
+                    <li>GRAPGIC DESIGN</li>
+                    <li>MOBILE APP DESIGN & DEVELOPMENT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="clients">
+                <h2>They Trust Us</h2>
+
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/USBankWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/TheWeatherNetworkWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/SpokWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/CapitalOne.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/ServerManiaWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/RaveWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/MeFreeCamsWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/InteracWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/FacebookWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/CronometerWhite.png' %}" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" alt="company logo" src="{% static 'images/PivotLabsWhite.png' %}" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+        <div class="quote">
+            <h2>Request a Quote</h2>
+            <h4>Telll Us About Your Project</h4>
+            <div class="project">
+                <p>Project</p>
+                <div class="verticalList">
+                    <div class="radio">
+
+                        <label for="notSure">
+                        <input type = "radio" class="radioInput" name="project" id="project" value="0">Not sure</label>
+                    </div>
+                    <div class="radio">
+
+                        <label for="vebDesign">
+                        <input type = "radio" class="radioInput" name="project" id="project" value="1">Web Design & Development</label>
+                    </div>
+                    <div class="radio">
+
+                        <label class="radioLabel">
+                        <input type = "radio" class="radioInput" name="project" id="project" value="2">Mobile App Design & Development</label>
+                    </div>
+                </div>
+                <div class="verticalList">
+                    <div class="radio">
+                        <label class="radioLabel">
+                        <input type = "radio" class="radioInput" name="project" id="project" value="3">Digital Marketing</label>
+
+                    </div>
+                    <div class="radio">
+                        <label class="radioLabel">
+                        <input type = "radio" class="radioInput" name="project" id="project" value="4">Digital Design</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerUpper">
+                <div class="footerColoms">
+                    <div id="company">
+                        <h3>Company</h3>
+                        <hr class="textWhite">
+                        <ul class="menu">
+                            <li class="manu-1">About Us</li>
+                            <li class="manu-1">Service</li>
+                            <li class="manu-1">Our Process</li>
+                        </ul>
+                    </div>
+                    <div id="services">
+                        <h3>Services</h3>
+                        <hr class="textWhite">
+                        <ul class="menu">
+                            <li class="manu-2">Web Design</li>
+                            <li class="manu-2">Web Development</li>
+                            <li class="manu-2">Responsive Design</li>
+                            <li class="manu-2">Graphic Design</li>
+                            <li class="manu-2">Mobile App Design & Development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerAddressAndSocial">
+                    <dif class="footerAddress">
+                        <h3>Vecen Developers inc</h3>
+                        <p class="contact">Stoney Creek,ON,Canada</p>
+                        <p class="contact"> email@gmail.com</p>
+                        <p class="contact">(XXX)XXX-XXXX</p>
+                    </dif>
+                    <div class="social">
+                        <ul class="socialIcons">
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="https://www.linkedin.com/in/draskovucenovic/?originalSubdomain=ca" target="_blank">
+                                <li><ion-icon name="logo-linkedin"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-instagram"></ion-icon></ion-icon></li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerLower">
+                <p>@2022 Rights reserved | Privacu Policy | Terms & Conditions</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>

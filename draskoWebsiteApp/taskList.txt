@@ -1,0 +1,12 @@
+Task List
+
+- black/white picture of each member in a white T-shirt, while working (2 versions/facing left and facing right)
+- Registration of copyright (1st ISED registration) - https://www.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/wr03915.html
+- privacy policy (created when we get a website name and website URL) - (example: https://lc.dev/privacy/)
+- SEO settings to be edited to all pages
+- web includes SSL 
+- register Domain Name and Website Hosting - Add domain ID protection (When you register a domain name with ICANN, you must provide your contact information including your name, phone number, physical address, and email address.
+
+As soon as your domain name is registered, this contact information becomes available to the public — unless you pay for domain privacy through your domain registrar. This domain privacy will shield your information from view keeping your personal information safe from spammers or worse, identity thieves.)
+
+P.S. Please let me know if we need to add more tasks to the list.
