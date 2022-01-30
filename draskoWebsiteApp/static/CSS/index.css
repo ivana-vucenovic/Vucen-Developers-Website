@@ -37,9 +37,9 @@ html, body {
     padding-right: 15px;
 }
 
-#top {
+/* #top {
     display: flex;
-}
+} */
 #primaryOpticalArea{
     width: 60%;
     padding: 10% 3% 3% 3%;
@@ -47,9 +47,9 @@ html, body {
     color: white;
 
 }
-.photo {
+/* .photo {
     width: 40%;
-}
+} */
 .button {
     padding-top: 5%;
     display:flex;

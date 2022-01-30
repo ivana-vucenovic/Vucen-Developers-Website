@@ -5,3 +5,10 @@ from .models import User
 
 def index(request):
     return render(request, 'index.html')
+
+def contact(request):
+    users = User.objects.all()
+    context ={
+        'users': users
+    }
+    return render(request, 'contact.html', context)
