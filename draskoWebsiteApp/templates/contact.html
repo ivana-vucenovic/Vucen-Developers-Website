@@ -5,39 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/contact.CSS' %}">
+
 </head>
 <body>
     <div class="request-quote-footer py-1 py-sm-3">
-        <div class="container">
-            <p class="text text-desc-2 text-desc fz-17 mb-1">Fill in your ....</p>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <input type="text" size="40" class="form-control mb-2" placeholder="Full Name *" required="" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
-                </div>
-                <div class="col-lg-6">
-                    <input type="text" size="40" class="form-control mb-2" placeholder="Company" id="Company" name="Company" value="">
-                </div>
-                <div class="col-lg-6">
-                    <input type="email" size="40" class="form-control mb-2" placeholder="Email *" required="" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
-                </div>
-                <div class="col-lg-6">
-                    <input type="tel" size="40" class="form-control mb-2" placeholder="Phone *" required="" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
-                </div>
-                <div class="col-lg-12">
-                    <textarea cols="40" rows="10" class="form-textarea mb-2" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
-                </div>
+        <nav id="navbar">
+            <h3 id="companyName">Vucen Develoopers inc</h3>
+            <div class="container">
+                <ul>
+                    <li><a href=" ">HOME</a></li>
+                    <li><a href=" ">ABOUT</a></li>
+                    <li><a href=" ">CONTACT</a></li>
+                </ul>
             </div>
+        </nav>
 
-            <div class="mt-2 mt-sm-4 text-center text-lg-right">
-                <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LcMkKIUAAAAAAeSNcf2VBD8GwBH4l7Dr0Pi68NU&amp;co=aHR0cHM6Ly93d3cuc3luaWNzdy5jb206NDQz&amp;hl=en&amp;v=dPctOHA2ifhWm5WzFM_B5TjT&amp;size=invisible&amp;sa=submit&amp;cb=6inb7h26pyoi" width="256" height="60" role="presentation" name="a-4t5a8qkox2o0" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LcMkKIUAAAAAAeSNcf2VBD8GwBH4l7Dr0Pi68NU" data-callback="onSubmit" data-action="submit">
+        <div class="contactForm">
+            <div class="contactForm">
+                <p class="text text-desc-2 text-desc fz-17 mb-1">Fill in your ....</p>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" size="40" class="form-control mb-2" placeholder="Full Name *" required="" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" size="40" class="form-control mb-2" placeholder="Company" id="Company" name="Company" value="">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" size="40" class="form-control mb-2" placeholder="Email *" required="" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="tel" size="40" class="form-control mb-2" placeholder="Phone *" required="" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
+                    </div>
+                    <div class="col-lg-12">
+                        <textarea cols="40" rows="10" class="form-textarea mb-2" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
+                    </div>
+                </div>
+
+                <div class="mt-2 mt-sm-4 text-center text-lg-right">
+                </div><button type="submit" class="btn btn-primary" data-action="submit">
                     Submit
                 </button>
+                </div>
             </div>
         </div>
     </div>
-
-        
     
 </body>
 </html>

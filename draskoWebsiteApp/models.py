@@ -1,5 +1,6 @@
 from email import message
 from django.db import models
+from django import forms
 import re
 # import bcrypt
 
@@ -15,6 +16,11 @@ class UserManager(models.Manager):
             errors ['email'] = "Email required"
         return errors
 
+class MyProjectManager(models.Manager):
+    def my_project_validator(self, postData):
+        errors = {}
+        # if
+
 class User(models.Model):
     first_name=models.CharField(max_length=45)
     last_name=models.CharField(max_length=45)
@@ -25,5 +31,19 @@ class User(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=UserManager()
+
+class MyProject(models.Model):
+    PROJECT_CHOICES = [('0','Not sure'),('1','Web Design & Development'),('2','Mobile App Design & DEvelopment'),('3','Digital Marketing'),('4','Digital Design')]
+    project=forms.ChoiceField(choices=PROJECT_CHOICES, widget=forms.RadioSelect)
+    timeline=
+    size_of_project=
+    INDUSTRY_CHOICES = [('0','FinTech'),('1','Hospitality'),('2','Manufactuer'),('3','Retail'),('4','Real Estate'),('5','Logistics'),('6','Healthcare'),('7','Beauty & Wellness'),('8','Education'),('9','Sports'),('10','Travel & Transportation'),('11','Other')]
+    industry=forms.ChoiceField(choices=INDUSTRY_CHOICES, widget=forms.RadioSelect)
+    services=models.ManyToManyField(User, related_name="projects")
+    created_at=models.DateTimeField(auto_now_add=True)
+    updated_at=models.DateTimeField(auto_now=True)
+    my_projects=MyProjectManager()
+
+
 
 

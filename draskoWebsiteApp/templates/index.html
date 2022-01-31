@@ -76,7 +76,7 @@
 
         <section id="top">
             <div id="diagonal"></div>
-            <div id="primaryOpticalArea">                    
+            <div id="primaryOpticalArea" >                    
                 <h1>Use a descriptive, Keyphrase focused headline</h1>
                 <h3>Clear, simple description of services, but don't put all of your calls to action at the top. One thing at the time. Visitors don't like clutter.</h3>
                 <div class="button">
@@ -90,9 +90,9 @@
             </div>
         </section>
         <div id="about">
-            <div class="photo">
+            <!-- <div class="photo">
                 <img id="blackWhiteRightAngle" style='height: 100%; width: 100%; object-fit: contain' alt="largeComputerDesk" src="{% static 'images/blackWhiteClearDesk.jpg' %}" />
-            </div>
+            </div> -->
             <div id="terminalArea">
                 <h2>SERVICES</h2>
                 <p>Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
@@ -158,17 +158,14 @@
                     <p>Project</p>
                     <div class="verticalList">
                         <div class="radio">
-
                             <label for="notSure">
                             <input type = "radio" class="radioInput" name="project" id="project" value="0">Not sure</label>
                         </div>
                         <div class="radio">
-
                             <label for="vebDesign">
                             <input type = "radio" class="radioInput" name="project" id="project" value="1">Web Design & Development</label>
                         </div>
                         <div class="radio">
-
                             <label class="radioLabel">
                             <input type = "radio" class="radioInput" name="project" id="project" value="2">Mobile App Design & Development</label>
                         </div>
@@ -177,7 +174,6 @@
                         <div class="radio">
                             <label class="radioLabel">
                             <input type = "radio" class="radioInput" name="project" id="project" value="3">Digital Marketing</label>
-
                         </div>
                         <div class="radio">
                             <label class="radioLabel">
@@ -194,6 +190,8 @@
                         </div>
                         <div class="col-lg-9">
                             <div class="options options-2">
+                                <div class="verticalList">
+
                                     <div class="form-check">
                                         <label class="form-check-label fz-16">
                                             <input type="radio" class="form-check-input" value="0" data-val="true" data-val-required="The Project field is required." id="Project" name="Project"> Not sure
@@ -209,6 +207,9 @@
                                             <input type="radio" class="form-check-input" value="2" id="Project" name="Project"> Mobile App Design &amp; Development
                                         </label>
                                     </div>
+                                </div>
+                                <div class="verticalList">
+
                                     <div class="form-check">
                                         <label class="form-check-label fz-16">
                                             <input type="radio" class="form-check-input" value="3" id="Project" name="Project"> Digital Marketing
@@ -219,6 +220,7 @@
                                             <input type="radio" class="form-check-input" value="4" id="Project" name="Project"> Digital Design
                                         </label>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -277,6 +279,8 @@
                         </div>
                         <div class="col-lg-9">
                             <div class="options options-3">
+                                <div class="verticalList">
+
                                     <div class="form-check">
                                         <label class="form-check-label fz-16">
                                             <input type="radio" class="form-check-input" value="fintech" id="IndustryID" name="IndustryID"> FinTech
@@ -297,6 +301,9 @@
                                             <input type="radio" class="form-check-input" value="retail" id="IndustryID" name="IndustryID"> Retail
                                         </label>
                                     </div>
+                                </div>
+                                <div class="verticalList">
+
                                     <div class="form-check">
                                         <label class="form-check-label fz-16">
                                             <input type="radio" class="form-check-input" value="real-estate" id="IndustryID" name="IndustryID"> Real Estate
@@ -317,6 +324,9 @@
                                             <input type="radio" class="form-check-input" value="beauty-wellness" id="IndustryID" name="IndustryID"> Beauty &amp; Wellness
                                         </label>
                                     </div>
+                                </div>
+                                <div class="verticalList">
+
                                     <div class="form-check">
                                         <label class="form-check-label fz-16">
                                             <input type="radio" class="form-check-input" value="education" id="IndustryID" name="IndustryID"> Education
@@ -333,10 +343,11 @@
                                         </label>
                                     </div>
 
-                                <div class="form-check">
-                                    <label class="form-check-label fz-16">
-                                        <input type="radio" class="form-check-input" value="Other" id="IndustryID" name="IndustryID"> Other
-                                    </label>
+                                    <div class="form-check">
+                                        <label class="form-check-label fz-16">
+                                            <input type="radio" class="form-check-input" value="Other" id="IndustryID" name="IndustryID"> Other
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
