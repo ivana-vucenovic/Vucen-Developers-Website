@@ -10,47 +10,85 @@
 
 </head>
 <body>
-    <div class="request-quote-footer py-1 py-sm-3">
+    <div class="requestQuote">
         <nav id="navbar">
             <h3 id="companyName">Vucen Develoopers inc</h3>
             <div class="container">
                 <ul>
-                    <li><a href=" ">HOME</a></li>
+                    <li><a href="/home">HOME</a></li>
                     <li><a href=" ">ABOUT</a></li>
-                    <li><a href=" ">CONTACT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
 
+        <!-- <div class="contactForm"> -->
+            <!-- <p class="text text-desc-2 text-desc fz-17 mb-1">Fill in your ....</p> -->
+
+            <!-- <div class="row"> -->
+
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <input type="text" size="40" class="form-control mb-2" placeholder="Full Name *" required="" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value=""> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <input type="text" size="40" class="form-control mb-2" placeholder="Company" id="Company" name="Company" value=""> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <input type="email" size="40" class="form-control mb-2" placeholder="Email *" required="" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value=""> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <input type="tel" size="40" class="form-control mb-2" placeholder="Phone *" required="" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value=""> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-12"> -->
+                    <!-- <textarea cols="40" rows="10" class="form-textarea mb-2" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- <br> -->
+
+            <!-- <div class="mt-2 mt-sm-4 text-center text-lg-right"> -->
+            <!-- </div><button type="submit" class="btn btn-primary" data-action="submit"> -->
+                <!-- Submit -->
+            <!-- </button> -->
+            <!-- </div> -->
+
+        <!-- </div> -->
+
+        <!-- <p>_________________________________________________________</p> -->
+
         <div class="contactForm">
-            <div class="contactForm">
-                <p class="text text-desc-2 text-desc fz-17 mb-1">Fill in your ....</p>
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{message}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form id = "con" action = "/contactUs" method ="POST">
+                {% csrf_token %}
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <input type="text" size="40" class="form-control mb-2" placeholder="Full Name *" required="" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
-                    </div>
-                    <div class="col-lg-6">
-                        <input type="text" size="40" class="form-control mb-2" placeholder="Company" id="Company" name="Company" value="">
-                    </div>
-                    <div class="col-lg-6">
-                        <input type="email" size="40" class="form-control mb-2" placeholder="Email *" required="" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
-                    </div>
-                    <div class="col-lg-6">
-                        <input type="tel" size="40" class="form-control mb-2" placeholder="Phone *" required="" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
-                    </div>
-                    <div class="col-lg-12">
-                        <textarea cols="40" rows="10" class="form-textarea mb-2" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
-                    </div>
+                <div class="contactInfo">
+                    <input type="text" name="first_name" id="first_name" placeholder="Organization name">
                 </div>
-
-                <div class="mt-2 mt-sm-4 text-center text-lg-right">
-                </div><button type="submit" class="btn btn-primary" data-action="submit">
-                    Submit
-                </button>
+                <div class="contactInfo">
+                    <input id="telNo" name="telNo" type="tel"placeholder=" Tel. 123-456-7890">
                 </div>
-            </div>
+                <div class="contactInfo">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="contactInfo">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="contactInfo">
+                    <input type="password" name="pw_confirm" id="pw_confirm" placeholder="Confirm Password">
+                </div>
+                <button class="btn btn-warning">Register</button>
+                <button class="btn btn-primary"><a href="/home">Home</a></button>
         </div>
+
+
+
+
     </div>
     
 </body>

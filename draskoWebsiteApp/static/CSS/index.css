@@ -45,7 +45,12 @@ html, body {
     padding: 10% 3% 3% 3%;
     background-color: black;
     color: white;
-
+}
+#primaryOpticalArea h1 {
+    text-align: center;
+}
+#primaryOpticalArea h3 {
+    text-align: center;
 }
 .photo {
     width: 40%;
@@ -64,7 +69,7 @@ html, body {
 #about {
     /* display: flex; */
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-position: center;
     background-size: cover;
     background-image: url("../images/blackWhiteClearDesk.jpg");
@@ -75,11 +80,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: white; */
 }
 #terminalArea h2{
-    padding-top: 10%;
-    width: 20%;
+    text-align: center;
+    padding-top: 8%;
+    font-weight: 800;
     margin: 0 auto;
     color: white;
 }
@@ -87,21 +92,21 @@ html, body {
     width: 50%;
     margin: 0 auto;
 }
-
-/* #terminalArea {
-    width: 60%;
-    background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
-    color: white;
-} */
 #terminalArea p{
+    text-align: center;
     padding: 3%;
     color: white;
+    font-size: large;
+    font-weight: 700;
 }
 #terminalArea ul{
+    text-align: center;
     list-style: none;
 }
 #terminalArea li{
     color: orange;
+    font-weight: 700;
+    font-size: x-large;
 }
 .clients h2{
     width: 20%;
@@ -115,18 +120,14 @@ html, body {
 .quote {
     width: 100%;
     padding-top: 3%;
-
     background-image: linear-gradient(to bottom right,black, rgb(90, 89, 88), black);
     color: white;
 }
 .quote h2{
-    width: 20%;
-    margin: 0 auto;
-
+    text-align: center;
 }
 .quote h4{
-    width: 20%;
-    margin: 0 auto;
+    text-align: center;
     padding-top: 2%;
 }
 
@@ -135,20 +136,47 @@ html, body {
     display: flex;
     justify-content: space-around;
 }
-/* .radioslider_horizontal {
-    flex-flow: row;
-    justify-content: space-between;
-    padding-bottom: 0;
-} */
+.timeline {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.sizeOfProject {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.industry {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.services {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 .radioInput {
     padding: 15px 0;
 }
-
 .row {
     padding-top: 2%;
     display: flex;
     justify-content: space-around;
 }
+/* .options2 {
+    display: flex;
+    justify-content: space-around;
+
+} */
+/* .col-lg-9 {
+    display: flex;
+    justify-content: space-around;
+
+} */
 .form-check-input {
     padding: 15px 0;
 }

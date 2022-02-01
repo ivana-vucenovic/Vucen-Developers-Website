@@ -35,8 +35,10 @@ class User(models.Model):
 class MyProject(models.Model):
     PROJECT_CHOICES = [('0','Not sure'),('1','Web Design & Development'),('2','Mobile App Design & DEvelopment'),('3','Digital Marketing'),('4','Digital Design')]
     project=forms.ChoiceField(choices=PROJECT_CHOICES, widget=forms.RadioSelect)
-    timeline=
-    size_of_project=
+    TIMELINE_CHOICES = [('0','Not sue'),('1','1 month'),('2','6 months'),('3','1 year'),('4','1.5 year'),('5','2+ years')]
+    timeline=forms.ChoiceField(choices=TIMELINE_CHOICES, widget=forms.RadioSelect)
+    SIZE_OF_PROJECT_CHOICES = [('0','Not sure'),('1','Mini'),('2','Smal'),('3','Medium'),('4','Large')]
+    size_of_project=forms.ChoiceField(choices=SIZE_OF_PROJECT_CHOICES, widget=forms.RadioSelect)
     INDUSTRY_CHOICES = [('0','FinTech'),('1','Hospitality'),('2','Manufactuer'),('3','Retail'),('4','Real Estate'),('5','Logistics'),('6','Healthcare'),('7','Beauty & Wellness'),('8','Education'),('9','Sports'),('10','Travel & Transportation'),('11','Other')]
     industry=forms.ChoiceField(choices=INDUSTRY_CHOICES, widget=forms.RadioSelect)
     services=models.ManyToManyField(User, related_name="projects")

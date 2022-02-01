@@ -65,9 +65,9 @@
             <h3 id="companyName">Vucen Develoopers inc</h3>
             <div class="container">
                 <ul>
-                    <li><a href=" ">HOME</a></li>
+                    <li><a href="/home">HOME</a></li>
                     <li><a href=" ">ABOUT</a></li>
-                    <li><a href=" ">CONTACT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -77,7 +77,7 @@
         <section id="top">
             <div id="diagonal"></div>
             <div id="primaryOpticalArea" >                    
-                <h1>Use a descriptive, Keyphrase focused headline</h1>
+                <h1 class="title">Use a descriptive, Keyphrase focused headline</h1>
                 <h3>Clear, simple description of services, but don't put all of your calls to action at the top. One thing at the time. Visitors don't like clutter.</h3>
                 <div class="button">
                     <a href="/"><button class="btn" style="border-color:orange; background-color:black; color:orange">Our Services</button></a>
@@ -95,7 +95,7 @@
             </div> -->
             <div id="terminalArea">
                 <h2>SERVICES</h2>
-                <p>Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
+                <p class="services">Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
                 <ul>
                     <li>WEB DESIGN</li>
                     <li>WEB DEVELOOPMENT</li>
@@ -183,230 +183,182 @@
                 </div>
 
 
-                <div class="py-2 py-sm-3">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="fz-16">Project</p>
+                <div class="timeline">
+                    <p>Timeline</p>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label for="notSure">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="0">Not sure</label>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="options options-2">
-                                <div class="verticalList">
-
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="0" data-val="true" data-val-required="The Project field is required." id="Project" name="Project"> Not sure
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="1" id="Project" name="Project"> Web Design &amp; Development
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="2" id="Project" name="Project"> Mobile App Design &amp; Development
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="verticalList">
-
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="3" id="Project" name="Project"> Digital Marketing
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="4" id="Project" name="Project"> Digital Design
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="radio">
+                            <label for="vebDesign">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="1">1 month</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="2">6 months</label>
+                        </div>
+                    </div>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="3">1 year</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="4">1.5 year</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="5">+2 years</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="py-2 py-sm-3">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="fz-16">Timeline</p>
+
+                <div class="sizeOfProject">
+                    <p>Size of project</p>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label for="notSure">
+                            <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="0">Not sure</label>
                         </div>
-                        <div class="col-lg-9">
-                            <div id="radios-timeline" class="radios-line radioslider radioslider_horizontal radioslider_fit radioslider_animated radioslider_tiny" data-radioslider="1">
-                                    <div class="radioslider__item active"><input id="timeline-0" type="radio" value="0" data-val="true" data-val-required="The Timeline field is required." name="Timeline" class="radioslider__input" data-level="1"><label for="timeline-0" class="radioslider__label active"><span class="radioslider__dot" data-level="1" data-value="0" style="opacity: 0;"></span><span class="radioslider__text">Not sure</span></label></div> 
-                                    
-                                    <div class="radioslider__item"><input id="timeline-1" type="radio" value="1" name="Timeline" class="radioslider__input" data-level="2"><label for="timeline-1" class="radioslider__label"><span class="radioslider__dot" data-level="2" data-value="1"></span><span class="radioslider__text">1 month</span></label></div> 
-                                    
-                                    <div class="radioslider__item"><input id="timeline-2" type="radio" value="2" name="Timeline" class="radioslider__input" data-level="3"><label for="timeline-2" class="radioslider__label"><span class="radioslider__dot" data-level="3" data-value="2"></span><span class="radioslider__text">6 months</span></label></div> 
-                                
-                                    <div class="radioslider__item"><input id="timeline-3" type="radio" value="3" name="Timeline" class="radioslider__input" data-level="4"><label for="timeline-3" class="radioslider__label"><span class="radioslider__dot" data-level="4" data-value="3"></span><span class="radioslider__text">1 year</span></label></div> 
-                                
-                                    <div class="radioslider__item"><input id="timeline-4" type="radio" value="4" name="Timeline" class="radioslider__input" data-level="5"><label for="timeline-4" class="radioslider__label"><span class="radioslider__dot" data-level="5" data-value="4"></span><span class="radioslider__text">1.5 years</span></label></div> 
-                                
-                                    <div class="radioslider__item"><input id="timeline-5" type="radio" value="5" name="Timeline" class="radioslider__input" data-level="6"><label for="timeline-5" class="radioslider__label"><span class="radioslider__dot" data-level="6" data-value="5"></span><span class="radioslider__text">2+ years</span></label></div> 
-                                
-                            <span class="radioslider__bar"><span class="radioslider__fill" style="left: 0%; width: 0.992509%;"></span><span class="radioslider__handle" style="left: 0.992509%;"></span></span></div>
+                        <div class="radio">
+                            <label for="vebDesign">
+                            <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="1">Mini</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="2">Small</label>
+                        </div>
+                    </div>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="3">Medium</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="4">Large</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="py-2 py-sm-3">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="fz-16">Size of Project</p>
+
+
+                <div class="industry">
+                    <p>Industry</p>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label for="notSure">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="0">FinTech</label>
                         </div>
-                        <div class="col-lg-9">
-                            <div id="radios-size" class="radios-line radioslider radioslider_horizontal radioslider_fit radioslider_animated radioslider_tiny" data-radioslider="2">
-                                    <div class="radioslider__item active"><input id="size-0" type="radio" value="0" data-val="true" data-val-required="The Size field is required." name="Size" class="radioslider__input" data-level="1"><label for="size-0" class="radioslider__label active"><span class="radioslider__dot" data-level="1" data-value="0" style="opacity: 0;"></span><span class="radioslider__text">Not sure</span></label></div>
-                                
-                                    <div class="radioslider__item"><input id="size-1" type="radio" value="1" name="Size" class="radioslider__input" data-level="2"><label for="size-1" class="radioslider__label"><span class="radioslider__dot" data-level="2" data-value="1"></span><span class="radioslider__text">Mini</span></label></div>
-                                
-                                    <div class="radioslider__item"><input id="size-2" type="radio" value="2" name="Size" class="radioslider__input" data-level="3"><label for="size-2" class="radioslider__label"><span class="radioslider__dot" data-level="3" data-value="2"></span><span class="radioslider__text">Small</span></label></div>
-                                
-                                    <div class="radioslider__item"><input id="size-3" type="radio" value="3" name="Size" class="radioslider__input" data-level="4"><label for="size-3" class="radioslider__label"><span class="radioslider__dot" data-level="4" data-value="3"></span><span class="radioslider__text">Medium</span></label></div>
-                                
-                                    <div class="radioslider__item"><input id="size-4" type="radio" value="4" name="Size" class="radioslider__input" data-level="5"><label for="size-4" class="radioslider__label"><span class="radioslider__dot" data-level="5" data-value="4"></span><span class="radioslider__text">Large</span></label></div>
-                                
-                            <span class="radioslider__bar"><span class="radioslider__fill" style="left: 0%; width: 0.992509%;"></span><span class="radioslider__handle" style="left: 0.992509%;"></span></span></div>
+                        <div class="radio">
+                            <label for="vebDesign">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="1">Hospitality</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="2">Manufacturer</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="3">Retail</label>
+                        </div>
+                    </div>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="4">Real Estate</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="5">Logistics</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="6">Healthcare</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="7">Beauty & Wellness</label>
+                        </div>
+                    </div>
+                    <div class="verticalList">
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="8">Education</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="9">Sports</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="10">Travel & Transportation</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radioLabel">
+                            <input type = "radio" class="radioInput" name="industry" id="industry" value="11">Other</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="py-2 py-sm-3">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="fz-16">Industry</p>
+
+                <div class="services">
+                    <p>Services</p>
+                    <div class="verticalList">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="0"> Not sure
+                            </label>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="options options-3">
-                                <div class="verticalList">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="1"> Consultation
+                            </label>
+                        </div>
 
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="fintech" id="IndustryID" name="IndustryID"> FinTech
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="hospitality" id="IndustryID" name="IndustryID"> Hospitality
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="manufacturer" id="IndustryID" name="IndustryID"> Manufacturer
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="retail" id="IndustryID" name="IndustryID"> Retail
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="verticalList">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="2"> User research
+                            </label>
+                        </div>
 
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="real-estate" id="IndustryID" name="IndustryID"> Real Estate
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="logistics" id="IndustryID" name="IndustryID"> Logistics
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="healthcare" id="IndustryID" name="IndustryID"> Healthcare
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="beauty-wellness" id="IndustryID" name="IndustryID"> Beauty &amp; Wellness
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="verticalList">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="3"> Design
+                            </label>
+                        </div>
 
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="education" id="IndustryID" name="IndustryID"> Education
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="sports" id="IndustryID" name="IndustryID"> Sports
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="travel-and-transportation" id="IndustryID" name="IndustryID"> Travel &amp; Transportation
-                                        </label>
-                                    </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="4"> Development
+                            </label>
+                        </div>
 
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="radio" class="form-check-input" value="Other" id="IndustryID" name="IndustryID"> Other
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="5"> Testing
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="6"> Lunch
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="services" value="7"> Ongoing support
+                            </label>
                         </div>
                     </div>
                 </div>
 
-                <div class="py-2 py-sm-3">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="fz-16">Services</p>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="options">
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="0"> Not sure
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="1"> Consultation
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="2"> User Research
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="3"> Design
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="4"> Development
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="5"> Testing
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="6"> Launch
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label fz-16">
-                                            <input type="checkbox" class="form-check-input" name="Services" value="7"> Ongoing Support
-                                        </label>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="mt-3 text-center text-lg-right">
-                    <button type="button" class="btn btn-primary font-weight-bold"><a href="/home">Next</a>
+                    <button type="button" class="btn btn-primary font-weight-bold"><a href="/contact">Next</a>
                     </button>
                 </div>
             </form>
