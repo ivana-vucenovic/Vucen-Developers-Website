@@ -130,32 +130,84 @@ html, body {
     text-align: center;
     padding-top: 2%;
 }
-
-.project {
-    padding-top: 2%;
+.quoteTop {
     display: flex;
     justify-content: space-around;
+}
+.industry .verticalList {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.project {
+    padding: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.project .verticalList {
+    /* padding: 2%; */
+    width: 125%;
 }
 .timeline {
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-around;
+    padding: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.timeline .verticalList {
+    /* padding: 2%; */
+    width: 125%;
+
 }
 .sizeOfProject {
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-around;
+    padding: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+
+    /* display: flex; */
+    /* justify-content: space-around; */
 }
+.sizeOfProject .verticalList{
+    /* padding: 2%; */
+    width: 125%;
+}
+
 .industry {
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-around;
+    padding: 4%;
+    margin: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+
+    /* display: flex; */
+    /* justify-content: space-around; */
 }
 .services {
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-around;
+    padding: 4%;
+    margin: 4%;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+
+    /* display: flex; */
+    /* justify-content: space-around; */
 }
+.services .verticalList {
+    padding: 2%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+
+}
+
 
 
 

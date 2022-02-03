@@ -95,7 +95,7 @@
             </div> -->
             <div id="terminalArea">
                 <h2>SERVICES</h2>
-                <p class="services">Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
+                <p class="servicesDescription">Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p>
                 <ul>
                     <li>WEB DESIGN</li>
                     <li>WEB DEVELOOPMENT</li>
@@ -154,69 +154,101 @@
             <form id="requestQuote" class="requestQuote" action="/request-a-quote" method="post">
                 <h2>Request a Quote</h2>
                 <h4>Telll Us About Your Project</h4>
-                <div class="project">
-                    <p>Project</p>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label for="notSure">
-                            <input type = "radio" class="radioInput" name="project" id="project" value="0">Not sure</label>
-                        </div>
-                        <div class="radio">
-                            <label for="vebDesign">
-                            <input type = "radio" class="radioInput" name="project" id="project" value="1">Web Design & Development</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="project" id="project" value="2">Mobile App Design & Development</label>
+                <div class="quoteTop">
+                    <div class="project">
+                        <p>Project</p>
+                        <div class="verticalList">
+                            <div class="radio">
+                                <label for="notSure">
+                                <input type = "radio" class="radioInput" name="project" id="project" value="0">Not sure</label>
+                            </div>
+                            <div class="radio">
+                                <label for="vebDesign">
+                                <input type = "radio" class="radioInput" name="project" id="project" value="1">Web Design & Development</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="project" id="project" value="2">Mobile App Design & Development</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="project" id="project" value="3">Digital Marketing</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="project" id="project" value="4">Digital Design</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="project" id="project" value="3">Digital Marketing</label>
+
+
+                    <div class="sizeOfProject">
+                        <p>Size of project</p>
+                        <div class="verticalList">
+                            <div class="radio">
+                                <label for="notSure">
+                                <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="0">Not sure</label>
+                            </div>
+                            <div class="radio">
+                                <label for="vebDesign">
+                                <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="1">Mini</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="2">Small</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="3">Medium</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="4">Large</label>
+                            </div>
                         </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="project" id="project" value="4">Digital Design</label>
+                    </div>
+                <!-- </div> -->
+
+
+
+                    <div class="timeline">
+                        <p>Timeline</p>
+                        <div class="verticalList">
+                            <div class="radioColoms">
+                                <div class="radio">
+                                    <label for="notSure">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="0">Not sure</label>
+                                </div>
+                                <div class="radio">
+                                    <label for="vebDesign">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="1">1 month</label>
+                                </div>
+                                <div class="radio">
+                                    <label class="radioLabel">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="2">6 months</label>
+                                </div>
+                            </div>
+                            <div class="radioColoms">
+                                <div class="radio">
+                                    <label class="radioLabel">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="3">1 year</label>
+                                </div>
+                                <div class="radio">
+                                    <label class="radioLabel">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="4">1.5 year</label>
+                                </div>
+                                <div class="radio">
+                                    <label class="radioLabel">
+                                    <input type = "radio" class="radioInput" name="timeline" id="timeline" value="5">+2 years</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="timeline">
-                    <p>Timeline</p>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label for="notSure">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="0">Not sure</label>
-                        </div>
-                        <div class="radio">
-                            <label for="vebDesign">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="1">1 month</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="2">6 months</label>
-                        </div>
-                    </div>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="3">1 year</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="4">1.5 year</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="timeline" id="timeline" value="5">+2 years</label>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="sizeOfProject">
+                <!-- <div class="sizeOfProject">
                     <p>Size of project</p>
                     <div class="verticalList">
                         <div class="radio">
@@ -231,8 +263,6 @@
                             <label class="radioLabel">
                             <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="2">Small</label>
                         </div>
-                    </div>
-                    <div class="verticalList">
                         <div class="radio">
                             <label class="radioLabel">
                             <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="3">Medium</label>
@@ -242,64 +272,67 @@
                             <input type = "radio" class="radioInput" name="sizeOfProject" id="sizeOfProject" value="4">Large</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
 
                 <div class="industry">
                     <p>Industry</p>
                     <div class="verticalList">
-                        <div class="radio">
-                            <label for="notSure">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="0">FinTech</label>
+
+                        <div class="radioColoms">
+                            <div class="radio">
+                                <label for="notSure">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="0">FinTech</label>
+                            </div>
+                            <div class="radio">
+                                <label for="vebDesign">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="1">Hospitality</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="2">Manufacturer</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="3">Retail</label>
+                            </div>
                         </div>
-                        <div class="radio">
-                            <label for="vebDesign">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="1">Hospitality</label>
+                        <div class="radioColoms">
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="4">Real Estate</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="5">Logistics</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="6">Healthcare</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="7">Beauty & Wellness</label>
+                            </div>
                         </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="2">Manufacturer</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="3">Retail</label>
-                        </div>
-                    </div>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="4">Real Estate</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="5">Logistics</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="6">Healthcare</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="7">Beauty & Wellness</label>
-                        </div>
-                    </div>
-                    <div class="verticalList">
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="8">Education</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="9">Sports</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="10">Travel & Transportation</label>
-                        </div>
-                        <div class="radio">
-                            <label class="radioLabel">
-                            <input type = "radio" class="radioInput" name="industry" id="industry" value="11">Other</label>
+                        <div class="radioColoms">
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="8">Education</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="9">Sports</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="10">Travel & Transportation</label>
+                            </div>
+                            <div class="radio">
+                                <label class="radioLabel">
+                                <input type = "radio" class="radioInput" name="industry" id="industry" value="11">Other</label>
+                            </div>
                         </div>
                     </div>
                 </div>
