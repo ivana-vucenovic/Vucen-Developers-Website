@@ -109,7 +109,7 @@ html, body {
     font-size: x-large;
 }
 .clients h2{
-    width: 20%;
+    text-align: center;
     padding-bottom: 30px;
     margin: 0 auto;
     color: white;
@@ -208,27 +208,27 @@ html, body {
 
 }
 
+.servicesAndNext {
+    display: flex;
+}
 
+.quote .servicesAndNext .buttonNext {
+    padding-top: 40%;
+    padding-left: 25%;
+}
+.btn_1 {
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    color: black;
+
+
+}
 
 
 .radioInput {
     padding: 15px 0;
 }
-.row {
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-around;
-}
-/* .options2 {
-    display: flex;
-    justify-content: space-around;
-
-} */
-/* .col-lg-9 {
-    display: flex;
-    justify-content: space-around;
-
-} */
 .form-check-input {
     padding: 15px 0;
 }
