@@ -6,13 +6,10 @@
 }
 
 html, body {
-
     position: relative;
     height: 100%;
     width: 100%;
 }
-
-
 .homePage{
     width: 100%;
     height: 100%;
@@ -20,23 +17,33 @@ html, body {
 #navbar {
     width: 100%;
     position: fixed;
+    z-index: 90;
     height: 10%;
     background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
     color: white;
     display: flex;  
     align-items: center;
-    justify-content: space-around;
+}
+#companyName {
+    width: 50%;
+    padding-left: 5%;
+}
+.container {
+    width: 50%;
+}
+.container ul{
+    padding-left: 30%;
+    list-style: none;
+    
 }
 .container li{
-    display: inline;
+    display:inline;
 }
-
 .container a{
     color: white;
     text-decoration: none;
     padding-right: 15px;
 }
-
 #top {
     display: flex;
 }
@@ -58,16 +65,14 @@ html, body {
 .button {
     padding-top: 5%;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .btn {
     padding: 3%;
-    margin: 8% 8% 0% 8%;
     border-radius: 10%;
 }
 
 #about {
-    /* display: flex; */
     width: 100%;
     height: 500px;
     background-position: center;
@@ -122,13 +127,18 @@ html, body {
     padding-top: 3%;
     background-image: linear-gradient(to bottom right,black, rgb(90, 89, 88), black);
     color: white;
+    position: relative;
 }
 .quote h2{
     text-align: center;
 }
 .quote h4{
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.quoteTopTitle{
+    font-size: medium;
 }
 .quoteTop {
     display: flex;
@@ -145,11 +155,8 @@ html, body {
     background-color: white;
     color: black;
     border-radius: 15px;
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 .project .verticalList {
-    /* padding: 2%; */
     width: 125%;
 }
 .timeline {
@@ -157,38 +164,25 @@ html, body {
     background-color: white;
     color: black;
     border-radius: 15px;
-
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 .timeline .verticalList {
-    /* padding: 2%; */
     width: 125%;
-
 }
 .sizeOfProject {
     padding: 4%;
     background-color: white;
     color: black;
     border-radius: 15px;
-
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 .sizeOfProject .verticalList{
-    /* padding: 2%; */
     width: 125%;
 }
-
 .industry {
     padding: 4%;
     margin: 4%;
     background-color: white;
     color: black;
     border-radius: 15px;
-
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 .services {
     padding: 4%;
@@ -197,42 +191,32 @@ html, body {
     background-color: white;
     color: black;
     border-radius: 15px;
-
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 .services .verticalList {
     padding: 2%;
-    /* display: flex; */
-    /* justify-content: space-around; */
-
 }
-
 .servicesAndNext {
     display: flex;
 }
-
 .quote .servicesAndNext .buttonNext {
-    padding-top: 40%;
+    padding-top: 30%;
     padding-left: 25%;
 }
 .btn_1 {
     width: 90px;
     height: 40px;
-    border-radius: 15px;
-    color: black;
-
-
+    border-radius: 10px;
+    box-shadow: 5px 8px white;
 }
-
-
+.btn_1 a {
+    color: black;
+}
 .radioInput {
     padding: 15px 0;
 }
 .form-check-input {
     padding: 15px 0;
 }
-
 footer {
     padding: 4% 4% 0% 4%;
     background: black;
@@ -275,7 +259,6 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     padding: 15px 0;
-
 }
 .footerLower {
     padding: 5px;
