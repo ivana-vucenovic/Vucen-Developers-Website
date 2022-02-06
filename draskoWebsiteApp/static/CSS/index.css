@@ -44,6 +44,11 @@ html, body {
     text-decoration: none;
     padding-right: 15px;
 }
+.container a:hover {
+    color: orange;
+    text-decoration: none;
+    font-size: large;
+}
 #top {
     display: flex;
 }
@@ -122,17 +127,17 @@ html, body {
 .logo {
     height: 100%;
 }
-.quote {
+#quote {
     width: 100%;
     padding-top: 3%;
     background-image: linear-gradient(to bottom right,black, rgb(90, 89, 88), black);
     color: white;
     position: relative;
 }
-.quote h2{
+#quote h2{
     text-align: center;
 }
-.quote h4{
+#quote h4{
     text-align: center;
     padding-top: 1%;
     padding-bottom: 3%;
@@ -198,7 +203,7 @@ html, body {
 .servicesAndNext {
     display: flex;
 }
-.quote .servicesAndNext .buttonNext {
+#quote .servicesAndNext .buttonNext {
     padding-top: 30%;
     padding-left: 25%;
 }

@@ -14,3 +14,6 @@ def contact(request):
         'users': users
     }
     return render(request, 'contact.html', context)
+
+def about(request):
+    pass
