@@ -156,7 +156,7 @@ html, body {
 
 }
 .project {
-    padding: 4%;
+    padding: 3%;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -165,7 +165,7 @@ html, body {
     width: 125%;
 }
 .timeline {
-    padding: 4%;
+    padding: 3%;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -174,7 +174,7 @@ html, body {
     width: 125%;
 }
 .sizeOfProject {
-    padding: 4%;
+    padding: 3%;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -182,30 +182,30 @@ html, body {
 .sizeOfProject .verticalList{
     width: 125%;
 }
-.industry {
-    padding: 4%;
-    margin: 4%;
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-}
 .services {
-    padding: 4%;
-    margin: 4%;
-    width: 50%;
+    padding: 3%;
+    width: 25%;
     background-color: white;
     color: black;
     border-radius: 15px;
 }
-.services .verticalList {
+.services .verticalList{
     padding: 2%;
 }
-.servicesAndNext {
+.quoteBottom {
     display: flex;
 }
-#quote .servicesAndNext .buttonNext {
-    padding-top: 30%;
-    padding-left: 25%;
+.industry {
+    padding: 3%;
+    margin: 4%;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 60%;
+}
+.buttonNext {
+    padding-left: 10%;
+    padding-top: 15%;
 }
 .btn_1 {
     width: 90px;
