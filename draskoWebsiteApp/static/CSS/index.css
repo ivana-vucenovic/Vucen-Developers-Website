@@ -273,6 +273,19 @@ h3 {
     justify-content: space-evenly;
     padding: 15px 0;
 }
+.footerLower a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
 .footerLower {
     padding: 5px;
+    width: 50%;
+}
+.footerLower ul {
+    list-style: none;
+}
+.footerLower li {
+    display: inline;
+
 }

@@ -17,3 +17,6 @@ def contact(request):
 
 def about(request):
     pass
+
+def privacy(request):
+    return render(request, 'privacyPolicy.html')
