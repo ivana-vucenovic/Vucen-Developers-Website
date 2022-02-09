@@ -147,6 +147,7 @@
         
         <div id="quote">
             <form id="requestQuote" class="requestQuote" action="/request-a-quote" method="post">
+                {% csrf_token %}
                 <h2>Request A Quote</h2>
                 <h4>Tell Us About Your Project</h4>
                 <div class="quoteTop">

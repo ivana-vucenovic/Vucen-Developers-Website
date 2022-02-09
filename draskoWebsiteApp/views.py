@@ -20,3 +20,4 @@ def about(request):
 
 def privacy(request):
     return render(request, 'privacyPolicy.html')
+
