@@ -15,7 +15,14 @@ def contact(request):
     }
     return render(request, 'contact.html', context)
 
+def create(request):
+    User.objects.create(full_name = request.POST("Name"), company = request.POST("Company"), email = request.POST("Email"), phone = request.POST("Phone"), message = request.POST("Message"))
+    return redirect()
+
 def about(request):
+    pass
+
+def services(request):
     pass
 
 def privacy(request):
