@@ -13,6 +13,7 @@ html, body {
 .homePage{
     width: 100%;
     height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #navbar {
     width: 100%;
@@ -23,11 +24,14 @@ html, body {
     color: white;
     display: flex;  
     align-items: center;
+    font-size: larger;
 }
 
 #companyName {
     width: 50%;
     padding-left: 5%;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 .container {
     width: 50%;
@@ -130,7 +134,165 @@ html, body {
 .logo {
     height: 100%;
 }
-#quote {
+
+.one {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.two {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.three {
+    animation-duration: 6s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.four {
+    animation-duration: 8s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.five {
+    animation-duration: 10s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.six {
+    animation-duration: 12s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.seven {
+    animation-duration: 14s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+#process {
+    color: orange;
+}
+/* #quote {
     width: 100%;
     padding-top: 3%;
     background-image: linear-gradient(to bottom right,black, rgb(90, 89, 88), black);
@@ -224,7 +386,7 @@ html, body {
 }
 .form-check-input {
     padding: 15px 0;
-}
+} */
 footer {
     padding: 4% 4% 0% 4%;
     background: black;
@@ -252,9 +414,11 @@ footer {
 h3 {
     padding: 5px 0;
 }
+.title {
+    font-weight: bold;
+}
 .textWhite {
     margin: 5px 0;
-
 }
 .contact {
     padding: 3px 0;
