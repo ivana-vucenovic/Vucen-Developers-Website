@@ -32,47 +32,117 @@
                 {% endfor %}
             </ul>
             {% endif %}
+
+            {% if full_name %}
+                <div class="title">
+                    <h2>Thank you {{full_name}}!</h2>
+                    <p>We received your email and will contact you within 2-3 business days.</p>
+                </div>
+            {% else %}
+
             <form id = "con" action = "/contactUs" method ="POST">
                 {% csrf_token %}
 
-            <p class="contactFormTitle">Fill in your ....</p>
+                <div class="row">
 
-            <div class="row">
+                    <div class="contactLeft">
 
-                <div class="contactInfo">
-                    <input type="text" size="40" class="contactText" placeholder="Full Name *" required="" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
-                </div>
-                <div class="contactInfo">
-                    <input type="text" size="40" class="contactText" placeholder="Company" id="Company" name="Company" value="">
-                </div>
-                <div class="contactInfo">
-                    <input type="email" size="40" class="contactText" placeholder="Email *" required="" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
-                </div>
-                <div class="contactInfo">
-                    <input type="tel" size="40" class="contactText" placeholder="Phone" required="" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
-                </div>
-                <div class="contactInfo">
-                    <textarea cols="40" rows="10" class="contactMessage" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
-                </div>
-            </div>
+                        <div class="contactInfo">
+                            <input type="text" size="40" class="contactText" placeholder="Full Name *" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
+                        </div>
+                        <div class="contactInfo">
+                            <input type="text" size="40" class="contactText" placeholder="Company" id="Company" name="Company" value="">
+                        </div>
+                        <div class="contactInfo">
+                            <input type="email" size="40" class="contactText" placeholder="Email *" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
+                        </div>
+                        <div class="contactInfo">
+                            <input type="tel" size="40" class="contactText" placeholder="Phone" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
+                        </div>
+                    </div>
 
-            <div class="submitButton">
-                <button onclick="popup()">Submit</button>
-                <script>
-                    function popup() {
-                        alert("Success! We will contact you within 2-3 business days."); }
-                </script>
+                    <div class="contactRight">
+                        <div class="contactInfo">
+                            <textarea cols="40" rows="10" class="contactMessage" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
+                        </div>
 
-<!-- Submit button should initiate "contactMessage" url path, calling create()
-    Store the submitted info into variables?
-    Then we need to send that information to en email or accessible location -->
+                        <div class="submitButton">
+                            <!-- <button onclick="popup()" class="btn btn-primary">Submit</button>
+                            <script>
+                                function popup() {
+                                    alert("Success! We will contact you within 2-3 business days."); }
+                            </script> -->
 
-                <!-- <button type="submit" class="btn btn-primary" data-action="submit">
-                        Submit
-                    </button> -->
-            </div>
+    <!-- Submit button should initiate "contactMessage" url path, calling create()
+        Store the submitted info into variables?
+        Then we need to send that information to en email or accessible location -->
+
+                            <button type="submit" class="btn btn-primary" data-action="submit">
+                            Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            {% endif %}
+
 
         </div>
+        <footer>
+            <div class="footerUpper">
+                <div class="footerColoms">
+                    <div id="company">
+                        <h3>Company</h3>
+                        <hr class="textWhite">
+                        <ul class="menu">
+                            <li class="manu-1">About Us</li>
+                            <li class="manu-1">Services</li>
+                            <!-- <li class="manu-1">Our Process</li> -->
+                        </ul>
+                    </div>
+                    <div id="services">
+                        <h3>Services</h3>
+                        <hr class="textWhite">
+                        <ul class="menu">
+                            <li class="manu-2">Mobile App Design & Development</li>
+                            <li class="manu-2">Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerAddressAndSocial">
+                    <dif class="footerAddress">
+                        <h3>Vucen Developers Inc.</h3>
+                        <p class="contact">Stoney Creek, Ontario, Canada</p>
+                        <p class="contact">vucendevelopers1@gmail.com</p>
+                    </dif>
+                    <div class="social">
+                        <ul class="socialIcons">
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="https://www.linkedin.com/in/draskovucenovic/?originalSubdomain=ca" target="_blank">
+                                <li><ion-icon name="logo-linkedin"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            </a>
+                            <a class="socialIcon" href="" target="_blank">
+                                <li><ion-icon name="logo-instagram"></ion-icon></ion-icon></li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerLower">
+                <ul>
+                    <li>@2022 Rights reserved |</li>
+                    <li><a href="privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+
 
     </div>
     
