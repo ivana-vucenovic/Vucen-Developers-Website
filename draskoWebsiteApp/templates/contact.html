@@ -7,85 +7,55 @@
     <title>Contact</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'CSS/contact.CSS' %}">
-
+    <script src="{% static 'js/contactForm.js' %}"></script>
 </head>
+
 <body>
     <div class="requestQuote">
         <nav id="navbar">
             <h3 id="companyName">Vucen Developers</h3>
             <div class="container">
                 <ul>
-                    <li><a href="/home">HOME</a></li>
-                    <li><a href="/#about">ABOUT</a></li>
-                    <li><a href="/#about">OUR SERVICES</a></li>
-                    <li><a href="/#quote">REQUEST A QUOTE</a></li>
+                    <li><a href="/home">BACK TO HOMEPAGE</a></li>
                 </ul>
             </div>
         </nav>
 
 
-        <div class="contactForm">
-            {% if messages %}
-            <ul>
-                {% for message in messages %}
-                <li>{{message}}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-
-            {% if full_name %}
-                <div class="title">
-                    <h2>Thank you {{full_name}}!</h2>
-                    <p>We received your email and will contact you within 2-3 business days.</p>
+        <section>
+            <div class="formContainer">
+                <form action="https://formspree.io/f/mayvowaz" method="POST" id="my-form">
+                
+                <div class="form-group">
+                    <label for="fullName"> Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
                 </div>
-            {% else %}
-
-            <form id = "con" action = "/contactUs" method ="POST">
-                {% csrf_token %}
-
-                <div class="row">
-
-                    <div class="contactLeft">
-
-                        <div class="contactInfo">
-                            <input type="text" size="40" class="contactText" placeholder="Full Name *" data-val="true" data-val-required="Please enter your name." id="Name" name="Name" value="">
-                        </div>
-                        <div class="contactInfo">
-                            <input type="text" size="40" class="contactText" placeholder="Company" id="Company" name="Company" value="">
-                        </div>
-                        <div class="contactInfo">
-                            <input type="email" size="40" class="contactText" placeholder="Email *" data-val="true" data-val-email="Please enter a valid e-mail address." data-val-required="Please enter your e-mail." id="Email" name="Email" value="">
-                        </div>
-                        <div class="contactInfo">
-                            <input type="tel" size="40" class="contactText" placeholder="Phone" data-val="true" data-val-required="Please enter your phone." id="Phone" name="Phone" value="">
-                        </div>
-                    </div>
-
-                    <div class="contactRight">
-                        <div class="contactInfo">
-                            <textarea cols="40" rows="10" class="contactMessage" placeholder="Message" style="resize: none;" id="Message" name="Message"></textarea>
-                        </div>
-
-                        <div class="submitButton">
-                            <!-- <button onclick="popup()" class="btn btn-primary">Submit</button>
-                            <script>
-                                function popup() {
-                                    alert("Success! We will contact you within 2-3 business days."); }
-                            </script> -->
-
-    <!-- Submit button should initiate "contactMessage" url path, calling create()
-        Store the submitted info into variables?
-        Then we need to send that information to en email or accessible location -->
-
-                            <button type="submit" class="btn btn-primary" data-action="submit">
-                            Submit
-                            </button>
-                        </div>
-                    </div>
+                
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
                 </div>
-            </form>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            {% endif %}
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="meessage" id="message" cols="30" rows="10"></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
 
 
         </div>
