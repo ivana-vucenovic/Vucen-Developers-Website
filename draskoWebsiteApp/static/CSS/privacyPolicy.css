@@ -19,7 +19,7 @@ html, body {
     position: fixed;
     z-index: 90;
     height: 10%;
-    background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
+    background-image: url("../images/navImage.jpeg");
     color: white;
     display: flex;  
     align-items: center;
@@ -27,6 +27,9 @@ html, body {
 #companyName {
     width: 50%;
     padding-left: 5%;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 1%;
 }
 .container {
     width: 50%;
@@ -62,13 +65,14 @@ h2 {
 .mainPage p {
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 2%;
     font-size: large;
 }
 .mainPage ul {
     padding-left: 2%;
 }
 footer {
-    padding: 4% 4% 0% 4%;
+    padding: 2% 4% 0% 4%;
     background: black;
     color: white;
 }

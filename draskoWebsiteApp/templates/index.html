@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
 
@@ -64,8 +65,8 @@
             <div class="container">
                 <ul>
                     <li><a href="/home">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#about">OUR SERVICES</a></li>
+                    <li><a href="#aboutArea">ABOUT US</a></li>
+                    <li><a href="#services">OUR SERVICES</a></li>
                     <!-- <li><a href="/#quote">REQUEST A QUOTE</a></li> -->
                     <li><a href="/contact">CONTACT</a></li>
                 </ul>
@@ -90,19 +91,25 @@
                 </div>
             
                 <div class="button">
-                    <a href="#about"><button class="btn" style="border-color:orange; background-color:black; color:orange">Our Services</button></a>
+                    <a href="#services"><button class="btn" style="border-color:orange; background-color:black; color:orange">Our Services</button></a>
                     <!-- <a href="#quote"><button class="btn" style="background-color: orange; color: black">Get My FREE Quote</button></a> -->
                 </div>
-
             </div>
             <div class="photo">
                 <img id="blackWhiteClearDesk" style='height: 100%; width: 100%; object-fit: contain' alt="computerDesk" src="{% static 'images/ivanaColor copy.png' %}" />
             </div>
         </section>
-        <div id="about">
+
+        <div id="aboutArea">
+            <div id="about">
+                <h2>ABOUT</h2>
+                <p>As a software engineer since 2012, my passion has been to build high quality iOS mobile applications. Extensive experience with object oriented programming, UI, and application architecture has enabled me to develop many native iOS mobile apps using Objective-C, Swift UIKit and now Swift UI. I have put together a team of like-minded developers who share the goal of delivering high quality projects for our clients.  </p>
+            </div>
+        </div>
+
+        <div id="services">
             <div id="terminalArea">
                 <h2>SERVICES</h2>
-                <!-- <p class="servicesDescription">Avoid long paragraphs. Short paragraphs get read, long paragraphs get skimmed, really long paragraphs get skipped (max 3-4 lines). The line should have no more than 12 words. If writing a list. put the important staff at the beginning and end. </p> -->
                 <ul>
                     <li>MOBILE APP DESIGN & DEVELOPMENT</li>
                     <li>RESPONSIVE DESIGN</li>
@@ -390,7 +397,7 @@
                             <!-- <li class="manu-1">Our Process</li> -->
                         </ul>
                     </div>
-                    <div id="services">
+                    <div id="servicesFooter">
                         <h3>Services</h3>
                         <hr class="textWhite">
                         <ul class="menu">
@@ -405,7 +412,7 @@
                         <p class="contact">Stoney Creek, Ontario, Canada</p>
                         <p class="contact">vucendevelopers1@gmail.com</p>
                     </dif>
-                    <div class="social">
+                    <!-- <div class="social">
                         <ul class="socialIcons">
                             <a class="socialIcon" href="" target="_blank">
                                 <li><ion-icon name="logo-facebook"></ion-icon></li>
@@ -421,12 +428,12 @@
                             </a>
 
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="footerLower">
                 <ul>
-                    <li>@2022 Rights reserved |</li>
+                    <li>@2022 Rights Reserved |</li>
                     <li><a href="privacy">Privacy Policy</a></li>
                 </ul>
             </div>
