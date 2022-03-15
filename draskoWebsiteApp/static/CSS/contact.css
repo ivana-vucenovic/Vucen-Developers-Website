@@ -9,7 +9,8 @@
     position: fixed;
     z-index: 90;
     height: 10%;
-    background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black);
+    background-image: url("../images/navImage.jpeg");
+    /* background-image: linear-gradient(to bottom right, black,rgb(90, 89, 88),black); */
     color: rgb(255, 255, 255);
     display: flex;  
     align-items: center;
@@ -58,7 +59,7 @@ section {
     justify-content: center;
     flex-direction: column;
     padding-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 .formContainer {
     width: 90%;
